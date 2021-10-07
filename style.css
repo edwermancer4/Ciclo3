@@ -559,3 +559,15 @@ body {
 .page-footer a {
     margin-left: 4px;
 }
+
+.welcome{
+font-size: xx-large;
+font-style: oblique;
+font-weight: 300;
+}
+
+.welcomes{
+    font-size: large;
+    font-style: normal;
+    font-weight: 300;
+    }
