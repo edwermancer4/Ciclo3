@@ -45,21 +45,3 @@ for (const link of menuLinks) {
         }
     });
 }
-
-/*TOGGLE LIGHT/DARK MODE*/
-if (localStorage.getItem("dark-mode") === "false") {
-    html.classList.add(lightModeClass);
-    switchInput.checked = false;
-    switchLabelText.textContent = "Light";
-}
-
-switchInput.addEventListener("input", function() {
-    html.classList.toggle(lightModeClass);
-    if (html.classList.contains(lightModeClass)) {
-        switchLabelText.textContent = "Light";
-        localStorage.setItem("dark-mode", "false");
-    } else {
-        switchLabelText.textContent = "Dark";
-        localStorage.setItem("dark-mode", "true");
-    }
-});
